@@ -1,0 +1,3 @@
+appname = FatUrl-Iralance
+httpport = 8080
+runmode = dev
