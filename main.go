@@ -8,6 +8,8 @@ import (
 	"github.com/astaxie/beego"
 
 	_ "FatUrl-Iralance/initial"
+
+	_ "github.com/TeamFat/FatUrl-Iralance/models"
 )
 
 func main() {
