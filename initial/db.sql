@@ -4,7 +4,6 @@ USE `short`;
 DROP TABLE IF EXISTS `url`;
 CREATE TABLE `url` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
-  `domain` varchar(30) NOT NULL DEFAULT '' COMMENT '域名',
   `url` varchar(255) DEFAULT '' COMMENT '地址',
   `hash` varchar(20) DEFAULT '' COMMENT 'hash',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -24,7 +23,7 @@ CREATE TABLE `url_log` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS `admins`;
-CREATE TABLE `url_log` (
+CREATE TABLE `admins` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `username` varchar(30)  DEFAULT NULL COMMENT '用户名',
   `email` varchar(30)  DEFAULT NULL COMMENT '邮箱',
